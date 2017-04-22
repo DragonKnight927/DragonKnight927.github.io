@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Order</title>
+
+    <style>
+        #client_info label {
+            display: inline-block;
+            width: 69.8px;
+        }
+        
+        #client_info select {
+            width: 235px;
+        }
+        
+        img {
+            width: 16.3%;
+        }
+        
+        #num {
+            width: 141px;
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+    <form action="">
+        <h1>Restaurant Order Form</h1>
+
+
+        <fieldset id="client_info">
+            <legend>Clients Information</legend>
+            <select name="" id="">
+                <option value="mr">Mr.</option>
+                <option value="mrs">Mrs.</option>
+                <option value="ms">Ms.</option>
+            </select>
+            <hr>
+            <label for="name">Name</label>
+            <input id="name" type="text">
+            <label for="last">Last Name</label>
+            <input id="last" type="text">
+            <br>
+            <label for="email">Email</label>
+            <input id="email" type="email">
+            <label for="add">Address# &nbsp;</label>
+            <input id="add" type="text">
+            <br>
+
+
+            <label for="cell">Cell#&nbsp;</label>
+            <input id="cell" type="tel">
+
+            <hr>
+
+            <select name="" id="">
+                <option value="select">Select a City</option>
+                <option value="brampton">Brampton ON</option>
+                <option value="calgary">Calgary AB</option>
+                <option value="edmonton">Edmonton AB</option>
+                <option value="halifax">Halifax NS</option>
+                <option value="hamilton">Hamilton On</option>
+                <option value="london">London ON</option>
+                <option value="mississauga">Mississauga ON</option>
+                <option value="montreal">Montreal QC</option>
+                <option value="niagara">Niagara Falls ON</option>
+                <option value="ottawa">*Ottawa ON*</option>
+                <option value="quebec">Quebec City QC</option>
+                <option value="saskatoon">Saskatoon SK</option>
+                <option value="surrey">Surrey BC</option>
+                <option value="toronto">Toronto ON</option>
+                <option value="vancouver">Vancouver BC</option>
+                <option value="winnipeg">Winnipeg MB</option>
+            </select>
+            <label for="zip">Zip Code</label>
+            <input id="zip" type="text">
+
+        </fieldset>
+        <fieldset>
+            <legend>Order Options</legend>
+            <p>Number of People</p>
+            <input min="1" max="10" type="range" oninput="updateRange(this.value)">
+            <label id="num_people"></label>
+            <br>
+            <p>Burger $1.99, Hot Dog $1.49, Pizza $9.99, Poutine $4.49, Taco $1.99 </p>
+
+            <input type="checkbox">
+            <img src="https://www.harveys.ca/mobile/en/images/menu/products/original_single.png" alt="">
+            <input type="checkbox">
+            <img src="http://beverlypress.com/wp-content/uploads/2016/07/hot-dog-06.jpg" alt="">
+            <input type="checkbox">
+            <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ83oDqGBVDa1Qf9TY23HGdLp3z7TeYUpz45pODRKU9qC84jWq0" alt="">
+            <input type="checkbox">
+            <img src="http://papamarios.com/wp-content/uploads/2013/10/poutine.jpg" alt="">
+            <input type="checkbox">
+            <img src="http://myduhawk.com/wp-content/uploads/2016/03/taco.png" alt="">
+            <br>
+            <input min="0" max="10" id="num" type="number">
+            <input min="0" max="10" id="num" type="number">
+            <input min="0" max="10" id="num" type="number">
+            <input min="0" max="10" id="num" type="number">
+            <input min="0" max="10" id="num" type="number">
+
+
+
+            <hr>
+            <p>Date of Form Completion</p>
+            <input type="date">
+            <p>Time of Delivery: Open 24/7</p>
+            <input type="time">
+            <hr>
+            <p>Payment Options</p>
+            <input type="checkbox">Master Card
+            <input type="checkbox">Visa Card
+            <input type="checkbox">Paypal
+            <br> Amount(to nearest dollar) $
+            <input min="2.00" max="200.00" type="number"> +Donations:
+            <radiogroup>
+            <input type="checkbox">$5
+            <input type="checkbox">$10
+            <input type="checkbox">$25
+            <input type="checkbox">$50
+            <input type="checkbox">$100
+            <input type="checkbox">$200
+            <input type="checkbox">$500   
+            </radiogroup>
+            
+            <br>
+            <a target="_blank " href="calculator.html">Open HTML Calculator</a>
+            <br>
+            <a target="_blank " href="https://www.google.ca/webhp?sourceid=chrome-instant&rlz=1C1CHZL_enCA729CA729&ion=1&espv=2&ie=UTF-8#q=calculator">Open Online Calculator</a>
+
+
+
+
+            <hr> Please Leave Your Comments Here
+            <br>
+            <textarea name="" id="" cols="50" rows="10"></textarea>
+            <hr>
+
+            <button>Free Cookies!</button>
+            <button>Free Cupcakes!</button>
+            <button>Free Ice Cream!</button>
+
+            <br>
+            <input type="submit">
+            <input type="reset">
+        </fieldset>
+
+        <script>
+            function updateRange(val) {
+                var num_people = document.getElementById('num_people');
+                num_people.innerHTML = val;
+            }
+        </script>
+
+
+
+
+
+
+
+
+
+
+    </form>
+
+
+</body>
+
+</html>

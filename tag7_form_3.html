@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <style> input {
+        width: 150px;
+        }
+        button img {
+            width: 100px;
+        }
+    
+    </style>
+
+
+</head>
+
+<body>
+    <form action="#">
+
+        <input type="submit" value="OK">
+        <input type="button" value="abc" onclick="alert('hello guys, u SUCK!!! I hope a DT NUKE falls on ur face!')">
+        
+        <input id="imgbtn" type="image" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcROrWrRjzHEAz8g6IrPQFSeof16bXFWrZYDqeSREpl5R4TSDfedNg" value="nuke">
+         <br>
+        <button><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR1BkDpUNsxKPxnaG7m-4G90z04Vpxa6kfpyOueqEnTifCFFb3Amw" alt="">
+        <span>Image Button <br> Use at ur own risk</span>
+        
+        </button>
+
+
+
+
+
+
+
+
+    </form>
+
+<script>
+       var imgbtn=document.getElementById('imgbtn');
+        
+        imgbtn.addEventListener('click',changeimg);
+    
+    function changeimg(e) {
+       e.preventDefault();
+       imgbtn.src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS71qidxwrhf7CWWEodwPgBk1d4OpFtvcoE-7zBySP8wCVnupfbsw";
+        
+        
+        
+        
+    
+    }
+    
+    </script>
+
+
+</body>
+
+</html>
