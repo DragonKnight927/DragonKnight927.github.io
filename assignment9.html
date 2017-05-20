@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		* {
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+            background: linear-gradient (red,yellow,blue);
+		}
+		
+		body {
+			background-color: aliceblue;
+			color: blue;
+			padding-top: 20px;
+			padding-left: 50px;
+		}
+		
+		.label,
+		.input {
+			display: inline-block;
+			text-align: left;
+		}
+		
+		.label {
+			width: 145px;
+		}
+		
+		.input {
+			width: 475px;
+		}
+		
+		.label label {
+			display: block;
+			height: 37px;
+			line-height: 37px;
+		}
+		
+        .inputbox,
+		.input select {
+			height: 37px;
+			width: 400px;
+			margin: 2px;
+            padding-left: 5px;
+		}
+
+		
+		fieldset {
+			width: 650px;
+			padding: 20px 10px 20px;
+		}
+		
+		::placeholder {
+			font-size: 11px;
+			color: dodgerblue;
+			font-family: cursive;
+			padding-left: 5px;
+		}
+        #submit {
+            padding: 5px;
+            border-radius: 10px;
+            border: solid;
+            border-color: blue
+
+        }
+		
+		button {
+			height: 29px;
+			width: 100px;
+			border-radius: 10px;
+			background-color: bisque;
+			border: solid 2px brown;
+			color: chocolate;
+			margin-left: auto;
+		}
+        #submit, #comments {
+            text-align: center;
+            padding: 10px;
+            margin-top: 5px
+        }
+		
+	</style>
+</head>
+
+<body>
+	<form class="center">
+		<fieldset>
+			<legend>Payment information</legend>
+			<div class="label">
+				<label for="username">Name:</label>
+				<label for="email">Email:</label>
+				<label for="phone">Phone:</label>
+				<label for="">City:</label>
+				<label for="paymentinfo">Payment options: </label>
+			</div>
+
+			<div class="input">
+				<input class='inputbox' id="username" type="text" placeholder="Please enter your full name">
+				<input class='inputbox' id="email" type="email" placeholder="Please enter your full email">
+				<input class='inputbox' id="phone" type="tel" placeholder="Please enter your phone number">
+				<select class='inputbox' name="cities" id="cities">
+				    <option value="select">Select a City</option>
+                    <option value="Brantford">Brantford</option>
+					<option value="Cambridge">Cambridge</option>
+					<option value="Hamilton">Hamilton</option>
+					<option value="Kingston">Kingston</option>
+					<option value="Kitchener">Kitchener</option>
+					<option value="London">London</option>
+					<option value="Markham">Markham</option>
+					<option value="Mississauga">Mississauga</option>
+					<option value="Niagara Falls">Niagara Falls</option>
+					<option value="Oshawa">Oshawa</option>
+					<option value="Ottawa">Ottawa</option>
+					<option value="Owen Sound">Owen Sound</option>
+					<option value="Peterborough">Peterborough</option>
+					<option value="Sarnia">Sarnia</option>
+					<option value="St.Catharines">St.Catharines</option>
+					<option value="St.Thomas">St.Thomas</option>
+					<option value="Stratford">Stratford</option>
+					<option value="Thunder Bay">Thunder Bay</option>
+					<option value="Toronto">Toronto</option>
+					<option value="Waterloo">Waterloo</option>
+					<option value="Windsor">Windsor</option>
+					<option value="Woodstock">Woodstock</option>
+				</select>
+
+				<div class="payment">
+					<input type="radio" name="payment info" checked>
+					<label for="">Master Card</label>
+					<input type="radio" name="payment info">
+					<label for="">Visa Card</label>
+					<input type="radio" name="payment info">
+					<label for="">Paypal</label>
+				</div>
+			</div>
+		</fieldset>
+
+			<textarea class="comments" name="comments" id="comments" cols="85" rows="15"></textarea>
+
+		<br>
+			<input id="submit" type="submit">
+
+	</form>
+	<br>
+</body>
+
+</html>
