@@ -7,7 +7,7 @@
         #box {
             width: 400px;
             height: 400px;
-            background-color: aqua;
+            background-color: red;
             position: fixed;
         }
         
@@ -17,7 +17,8 @@
             background-color: yellow;
             border-radius: 75%;
             position: fixed;
-            background: linear-gradient (red, yellow)
+            cursor: crosshair;
+            background: linear-gradient(aqua,yellow,yellow)
         }
         
         #eye1,
@@ -26,6 +27,11 @@
             height: 130px;
             background-color: white;
             border-radius: 50%;
+            border: solid 5px;
+            border-color: aqua;
+            border-top: none;
+            border-right: 1px;
+            border-left: 1px;
         }
         
         #eye1 {
@@ -48,6 +54,7 @@
             border-radius: 50%;
             margin-top: 30px;
             margin-left: 10px;
+            position: absolute;
         }
         
         #mouth {
@@ -80,6 +87,14 @@
             margin-top: 265px;
             margin-left: 283px;
         }
+        #catch1, #catch2 {
+            width: 20px;
+            height: 20px;
+            background-color: white;
+            border-radius: 50%;
+            position: absolute;
+            margin-top: 5px;
+            margin-left: 5px;
         }
     </style>
 </head>
@@ -89,10 +104,10 @@
     <div id="box">
         <div id="face">
             <div id="eye1">
-                <div id="pupil1"></div>
+                <div id="pupil1"><div id="catch1"></div></div>
             </div>
             <div id="eye2">
-                <div id="pupil2"></div>
+                <div id="pupil2"><div id="catch2"></div></div>
             </div>
             <div id="mouth">
             </div>
