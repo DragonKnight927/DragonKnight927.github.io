@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Face</title>
+    <style>
+        #box {
+            width: 400px;
+            height: 400px;
+            background-color: aqua;
+            position: fixed;
+        }
+        
+        #face {
+            width: 400px;
+            height: 400px;
+            background-color: yellow;
+            border-radius: 75%;
+            position: fixed;
+            background: linear-gradient (red, yellow)
+        }
+        
+        #eye1,
+        #eye2 {
+            width: 120px;
+            height: 130px;
+            background-color: white;
+            border-radius: 50%;
+        }
+        
+        #eye1 {
+            margin-top: 75px;
+            margin-left: 55px;
+            position: absolute
+        }
+        
+        #eye2 {
+            margin-left: 205px;
+            margin-top: 75px;
+            position: absolute;
+        }
+        
+        #pupil1,
+        #pupil2 {
+            width: 50px;
+            height: 50px;
+            background-color: black;
+            border-radius: 50%;
+            margin-top: 30px;
+            margin-left: 10px;
+        }
+        
+        #mouth {
+            width: 200px;
+            height: 100px;
+            background-color: red;
+            position: absolute;
+            margin-top: 265px;
+            margin-left: 90px;
+            border-bottom-left-radius: 100px;
+            border-bottom-right-radius: 100px;
+            border-bottom: 0;
+            border: solid 7px;
+        }
+        #mouth3, #mouth2 {
+            width: 30px;
+            height: 1px;
+            border: solid 3px;
+            border-radius: 25%;
+            background-color: black;
+            position: absolute;
+        }
+        #mouth2 {
+            transform: rotate(135deg);
+            margin-top: 265px;
+            margin-left: 75px;
+        }
+        #mouth3 {
+            transform: rotate(225deg);
+            margin-top: 265px;
+            margin-left: 283px;
+        }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="box">
+        <div id="face">
+            <div id="eye1">
+                <div id="pupil1"></div>
+            </div>
+            <div id="eye2">
+                <div id="pupil2"></div>
+            </div>
+            <div id="mouth">
+            </div>
+            
+                <div id="mouth2"></div>
+                <div id="mouth3"></div>
+        </div>
+    </div>
+
+</body>
+</html>
