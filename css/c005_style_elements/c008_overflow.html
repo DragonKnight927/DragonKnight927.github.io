@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        .container {
+            width: 400px;
+            height: 100px;
+            border: double blue;
+            overflow: visible;
+            overflow: hidden;
+        }
+        .scroll {
+            overflow:scroll
+        }
+        .auto {
+            overflow: auto;
+        }
+        .vis {
+            overflow: visible
+        }
+        		::-webkit-scrollbar {
+            -webkit-appearance: none;
+            width: 11px;
+            height: 21px;
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            border-radius: 10px;
+            background-color: rgba(0, 200, 255, .7);
+        }
+    </style>
+</head>
+<body>
+    <div class="container vis"><img src="http://orig06.deviantart.net/5a39/f/2017/078/2/a/marina_small_by_wesleart_by_bombswan-db2x2ss.png" alt=""></div>
+    
+    <div class="container"><img src="http://orig06.deviantart.net/5a39/f/2017/078/2/a/marina_small_by_wesleart_by_bombswan-db2x2ss.png" alt=""></div>
+    
+    <div class="container scroll"><img src="http://orig06.deviantart.net/5a39/f/2017/078/2/a/marina_small_by_wesleart_by_bombswan-db2x2ss.png" alt=""></div>
+    
+    <div class="container auto"><img src="http://orig06.deviantart.net/5a39/f/2017/078/2/a/marina_small_by_wesleart_by_bombswan-db2x2ss.png" alt=""></div>
+    <hr>
+    <hr>
+    <hr>
+</body>
+</html>
