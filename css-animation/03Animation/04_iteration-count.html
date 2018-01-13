@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        img {
+            width: 300px;
+            border-radius: 50%;
+            position: absolute;
+            transition: 1s;
+            
+            left: 0;
+            
+            left: 300px;
+        }
+        
+        @keyframes move {
+            0% {
+                left: 0;
+            }
+            100% {
+                left: 300px;
+            }
+        }
+        img {
+            animation-name: move;
+            animation-duration: 1s;
+            animation-iteration-count: 2.5;
+            animation-timing-function: linear;
+            
+            animation-direction: alternate;
+        }
+    </style>
+</head>
+<body>
+   
+   <img src="https://www.bluecross.org.uk/sites/default/files/assets/images/118809lpr.jpg" alt="">
+    
+</body>
+</html>

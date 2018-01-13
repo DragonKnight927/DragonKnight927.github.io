@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+        }
+        div {
+            width: 75px;
+            height: 75px;
+            background-color: darkblue;
+            left: 0;
+            position: relative;
+            transition: background-color 1.5s, left 1.5s, border-radius 1.5s;
+            transition-timing-function: cubic-bezier(.43, 1.47, .7, -0.45);
+        }
+        body:hover div {
+            border-radius: 50%;
+            background-color: black;
+            left: 575px;
+        }
+        body:hover {
+            background-color: darkblue;
+        }
+        body {
+            transition: background-color 1.5s;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

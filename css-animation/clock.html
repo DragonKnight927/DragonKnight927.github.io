@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Clock</title>
+    <style>
+        #circle1 {
+            width: 500px;
+            height: 500px;
+            border-radius: 50%;
+            background-color: black;
+            position: absolute;
+            left: 0;
+            top:0;
+        }
+        #circle2 {
+            width: 450px;
+            height: 450px;
+            border-radius: 50%;
+            background-color: blue;
+            position: absolute;
+            left: 25px;
+            top: 25px;
+        }
+        #middle {
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            background-color: black;
+            position: relative;
+            margin: auto;
+            top: 205px;
+            z-index: 2;
+        }
+        #twelve {
+            width: 10px;
+            height: 30px;
+            background-color: black;
+            position: relative;
+            margin: auto;
+            top: -30px;
+        }
+        #three {
+            width: 10px;
+            height: 30px;
+            background-color: black;
+            position: relative;
+            right: 10px;
+            top: 201.5px;
+            position: absolute;
+            
+            transform: rotate(90deg)
+        }
+        #six {
+            width: 10px;
+            height: 30px;
+            background-color: black;
+            position: relative;
+            margin: auto;
+            top: 370px;
+        }
+        #nine {
+            width: 10px;
+            height: 30px;
+            background-color: black;
+            position: relative;
+            right: 430px;
+            top: 201.5px;
+            position: absolute;
+            
+            transform: rotate(90deg)
+        }
+        #secondhand {
+            width: 10px;
+            height: 180px;
+            background-color: red;
+            position: absolute;
+            top: 60px;
+            left: 245px;
+            transform-origin: bottom;
+            
+            animation-name: time;
+            animation-duration: 60s;
+            animation-iteration-count: infinite;
+            animation-timing-function: steps(30);
+            z-index: 1;
+/*            animation-timing-function: linear;*/
+            
+        }
+        
+        #minutehand {
+            width: 10px;
+            height: 170px;
+            background-color: white;
+            position: absolute;
+            top: 70px;
+            left: 245px;
+            transform-origin: bottom;
+            
+            animation-name: time;
+            animation-duration: 3600s;
+            animation-iteration-count: infinite;
+            animation-timing-function: steps(30);
+        }
+        
+        #hourhand {
+            width: 10px;
+            height: 130px;
+            background-color: white;
+            position: absolute;
+            top: 110px;
+            left: 245px;
+            transform-origin: bottom;
+            transform: rotate(90deg);
+            
+            animation-name: hour;
+            animation-duration: 43200s;
+            animation-iteration-count: infinite;
+            animation-timing-function: steps(30);
+        }
+        
+        @keyframes time {
+            0% {
+                transform:rotate(0deg);
+            }
+            50% {
+                transform: rotate(180deg)
+            }
+            100% {
+                transform: rotate(360deg)
+            }
+        }
+        @keyframes hour {
+            0% {
+                transform:rotate(90deg);
+            }
+            50% {
+                transform: rotate(270deg)
+            }
+            100% {
+                transform: rotate(89.9999deg)
+            }
+        }
+    </style>
+</head>
+<body>
+   
+   <div id="circle1">
+     <div id="circle2">
+       <div id="middle">
+           
+       </div>
+       <div id="twelve"></div>
+           <div id="three"></div>
+           <div id="six"></div>
+           <div id="nine"></div>
+     </div>
+     <div id="secondhand"></div>
+     <div id="minutehand"></div>
+     <div id="hourhand"></div>
+   </div>
+   
+   
+   
+   
+</body>
+</html>

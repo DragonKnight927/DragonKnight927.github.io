@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body {
+            font-size: 2em;
+            background-color: black
+        }
+        a {
+            padding: 20px 80px;
+            display: inline-block;
+            text-decoration: none;
+            border: solid black;
+            color: blue;
+        }
+        a:not(:first-child) {
+            margin-left: 30px;
+        }
+        img {
+            position: absolute;
+            height: 500px;
+        }
+        .tab div {
+            opacity: 0;
+            transition: all 1s;
+        }
+        div:target {
+            opacity: 1
+        }
+    </style>
+</head>
+<body>
+    <div class="tab">
+        <a href="#item1">I</a>
+        <a href="#item2">II</a>
+        <a href="#item3">III</a>
+        
+        <div id="item1"><img src="http://screenheaven.com/thumbs/anime-manga/birds-black-phoenix-508-480x320.jpg" alt=""></div>
+        <div id="item2"><img src="http://www.leaguesplash.com/wp-content/uploads/2013/09/Anivia.jpg" alt=""></div>
+        <div id="item3"><img src="http://s2.thingpic.com/images/LA/gWLQpt96wT3N3c9gcXFzZ4Ds.jpeg" alt=""></div>
+
+<!--        a[href=#items$]*3        -->
+    </div>
+</body>
+</html>

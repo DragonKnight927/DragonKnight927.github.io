@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #000;
+        }
+        .container {
+            width: 600px;
+            height: 400px;
+            border: double blue;
+            
+            perspective: 0.1px;
+            perspective-origin: top center;
+            perspective-origin: 10px 100px;
+/*            perspective-origin is the vanishing point*/
+        }
+        .panel {
+            width: 300px;
+            height: 200px;
+            background-color:blue;
+            margin: auto;
+            
+            transform: rotateX(90deg);
+            transform-origin: bottom;
+            
+            font-size: 4em;
+            color: white;
+        }
+    </style>
+    
+</head>
+<body>
+   
+   <div class="container">
+       <div class="panel">Panel</div>
+   </div>
+    
+</body>
+</html>

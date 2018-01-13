@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Battery</title>
+	<style>
+		body,
+		html {
+			height: 100%;
+			background-color: black;
+		}
+
+		#battery {
+			height: 200px;
+			width: 100px;
+			box-shadow: 0px 0px 20px red inset;
+			border-radius: 5px;
+			overflow: hidden;
+			line-height: 200px;
+			margin: 0 auto;
+			margin-top: 65px;
+		}
+
+		#value {
+			height: 10px;
+			width: 100%;
+			background-color: #c4ff50;
+			animation: valuechange 1s linear alternate infinite;
+			box-shadow: 0px 0px 5px #222 inset;
+			display: inline-block;
+			vertical-align: bottom;
+		}
+
+		@keyframes valuechange {
+			100% {
+				height: 100%;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<div id="container">
+		<div id="battery">
+			<div id="value"></div>
+		</div>
+	</div>
+</body>
+
+</html>
+
+

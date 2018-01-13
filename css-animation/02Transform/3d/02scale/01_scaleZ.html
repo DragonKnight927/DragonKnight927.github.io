@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ScaleZZZ</title>
+    <style>
+        body {
+            background-color: #000;
+        }
+        
+        .container {
+            width: 300px;
+            border: double blue;
+            margin: auto;
+            margin-top: 200px;
+            perspective: 400px;
+        }
+        
+        .item {
+            width: 100px;
+            height: 100px;
+            background-color: darkblue;
+            margin: auto;
+            border-radius: 50%;
+            transform: scaleZ(2) translateZ(100px);
+            /*            scaleZ scales axis, tramslateZ scales item*/
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="item"></div>
+    </div>
+
+</body>
+</html>

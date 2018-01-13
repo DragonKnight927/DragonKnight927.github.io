@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        html {
+            background-color: black;
+        }
+        html:hover {
+            cursor: crosshair;
+            background-color: skyblue;
+            transition: 5s;
+        }
+        html:hover #mountain1 {
+            width: 0; 
+            height: 0; 
+            border-left: 200px solid transparent;
+            border-right: 200px solid transparent;
+  
+            border-bottom: 200px solid dimgrey;
+            position: absolute;
+            bottom: 350px;
+            left: 150px;
+            transition: 5s;
+        }
+        html:hover #mountain2 {
+            width: 0; 
+            height: 0; 
+            border-left: 100px solid transparent;
+            border-right: 100px solid transparent;
+  
+            border-bottom: 100px solid dimgrey;
+            position: absolute;
+            bottom: 350px;
+            left: 550px;
+            transition: 5s;
+        }
+        #land {
+            height: 350px;
+            width: 100%;
+            left: 0;
+            bottom: 0;
+            background-color: #002100;
+            position: fixed;
+            
+        }
+        html:hover #land {
+            background-color: springgreen;
+            transition: 5s;
+        }
+        #mountain1, #mountain2 {
+            background-color: transparent;
+        }
+        #mountain1 {
+            width: 0; 
+            height: 0; 
+            border-left: 200px solid transparent;
+            border-right: 200px solid transparent;
+  
+            border-bottom: 200px solid #0F0F17;
+            position: absolute;
+            bottom: 350px;
+            left: 150px;
+        }
+        #mountain2 {
+            width: 0; 
+            height: 0; 
+            border-left: 100px solid transparent;
+            border-right: 100px solid transparent;
+  
+            border-bottom: 100px solid #0F0F17;
+            position: absolute;
+            bottom: 350px;
+            left: 550px;
+        }
+        #sun {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            border-radius: 50%;
+            position: absolute;
+            bottom: 200px;
+            font-size: 2em;
+        }
+        html:hover #sun {
+            background-color: yellow;
+            bottom: 580px;
+            left: 390px;
+            transition: 5s;
+            transition-delay: 1s;
+            transform: rotate(9turn);
+        }
+        #dragon {
+            width: 250px;
+            position: absolute;
+            left: -210px;
+            top: 25px;
+        }
+        html:hover #dragon {
+            left: 1300px;
+            position: absolute;
+            width: 250px;
+            transition: 15s;
+            transition-delay: 2s;
+        }
+        #landanimal {
+            width: 150px;
+            position: absolute;
+            right: -160px;
+            bottom: 100px;
+        }
+        html:hover #landanimal {
+            right: 1000px;
+            position: absolute;
+            width: 200px;
+            transition: 15s;
+            transition-delay: 2s;
+        }
+        #leviathan {
+            position: absolute;
+            width: 1px;
+            left: 50%;
+            top: 50%;
+        }
+        html:hover #leviathan {
+            transform: scale(20) rotate(10turn);
+            transition: 5s;
+            transition-timing-function: cubic-bezier(0, 1.01, 1, -0.46);
+            transition-delay: 5s;
+        }
+        #leftlevi {
+            position: absolute;
+            width: 1px;
+            left: 25%;
+            top: 50%;
+        }
+        html:hover #leftlevi {
+            transform: scale(15) rotate(9turn);
+            transition: 5s;
+            transition-timing-function: cubic-bezier(0, 1.01, 1, -0.46);
+            transition-delay: 5.5s;
+        }
+        #rightlevi {
+            position: absolute;
+            width: 1px;
+            left: 75%;
+            top: 50%;
+        }
+        html:hover #rightlevi {
+            transform: scale(15) rotate(9turn);
+            transition: 5s;
+            transition-timing-function: cubic-bezier(0, 1.01, 1, -0.46);
+            transition-delay: 5.5s;
+        }
+        #bat {
+            width: 500px;
+            position: absolute;
+            left: 15%;
+            top: 20%;
+        }
+        html:hover #bat {
+            transform: scale(0.01);
+            transition: 2s;
+            position: absolute;
+            left: 20%;
+            top: 50%;
+        }
+    </style>
+</head>
+<body>
+   
+
+   
+   <div id="sun">&nbsp; &nbsp; -_-</div>
+   <div id="mountain2"></div>
+   <div id="mountain1"></div>
+   <div id="land"></div>
+   <div id="cloud"></div>  
+   
+   <div id="dragon"> <img id=dragon src="https://vignette.wikia.nocookie.net/dragoncity/images/f/fc/Nic-Nex-Profile.gif/revision/latest?cb=20131031204950" alt=""></div>
+   
+   <div id="landanimal"> <img id=landanimal src="https://i.giphy.com/media/hvYI9wlMn5a5q/source.gif" alt=""></div>
+   
+   
+   <div id="leviathan"> <img id=leviathan src="https://vignette.wikia.nocookie.net/war-dragons/images/9/93/Drg_ankor.gif/revision/latest?cb=20160911071022" alt=""></div>
+   
+   <div id="leftlevi"> <img id=leftlevi src="https://vignette2.wikia.nocookie.net/war-dragons/images/1/17/Drg_leviathan.gif/revision/latest?cb=20160912094225" alt=""></div>
+   
+   <div id="rightlevi"> <img id=rightlevi src="https://vignette.wikia.nocookie.net/war-dragons/images/0/07/Drg_Vazir.gif/revision/latest?cb=20160914140400" alt=""></div>
+   
+   <div id="bat"> <img id=bat src="https://cdn.dribbble.com/users/35224/screenshots/3012807/bat-after-bat.gif" alt=""></div>
+   
+   
+</body>
+</html>

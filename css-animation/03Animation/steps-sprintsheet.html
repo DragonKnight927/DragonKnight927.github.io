@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    
+    <style>
+        div {
+            width: 50px;
+            height: 72px;
+            border: solid;
+            background-image: url("http://s.cdpn.io/79/sprite-steps.png");
+            
+            animation-name: wave;
+            animation-duration: 0.75s;
+            animation-iteration-count: infinite;
+            animation-timing-function: steps(10, end);
+        }
+        
+        @keyframes wave {
+            0% {
+                background-position: 0px;
+            }
+            100% {
+                background-position: 500px;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+   
+   <img src="http://s.cdpn.io/79/sprite-steps.png" alt="">
+   <div></div>
+    
+</body>
+</html>

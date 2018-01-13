@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Battery</title>
+    <style>
+        body {
+            background-color: #000;
+        }
+        #outside {
+            height:200px;
+            width: 100px;
+            background-color:black;
+            border-radius: 7%;
+            border: solid 1.5px red;
+            position:absolute;
+            z-index: -2;
+            overflow: hidden;
+            box-shadow: 0px 0px 2px red inset;
+        }
+        #bar {
+            width: 98.5px;
+            height: 1px;
+            background-color: aqua;
+            position: absolute;
+            top: 208px;
+            animation-name:bar; 
+            animation-duration: 3s;
+            border-radius: 7%;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            z-index: -1;
+            animation-direction: alternate;
+        }
+        
+        @keyframes bar {
+            from {
+                height: 0.1px;
+                width: 98.5px;
+            }
+            to {
+                height: 200.3px;
+                top: 3px;
+                width: 98.5px;
+            }
+        }
+        img {
+            position: absolute;
+            left: -36.6px;
+        }
+    </style>
+</head>
+<body>
+   
+   <div id="outside"><div id="bar"></div></div>
+   
+   
+   
+   <img src="https://d30y9cdsu7xlg0.cloudfront.net/png/21604-200.png" alt="">
+   
+</body>
+</html>

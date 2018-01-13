@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .container {
+            perspective: 500px;
+            font-size: 8em;
+            text-align: center;
+            perspective-origin:500px 270px;
+            transition: 2s;
+        }
+        #side1 {
+            width: 150px;
+            height: 150px;
+            background-color: orange;
+            position: absolute;
+            left:200px;
+            top: 200px;
+            opacity: 0.5;
+        }
+        #side2 {
+            width: 150px;
+            height: 150px;
+            background-color: yellow;
+            position: absolute;
+            left: 200px;
+            top: 200px;
+            opacity: 0.5;
+            transform-origin: center;
+            transform: translateZ(150px);
+            
+        }
+        #side3 {
+            width: 150px;
+            height: 150px;
+            background-color: red;
+            position: absolute;
+            left: 50px;
+            top: 200px;
+            transform-origin: right;
+            transform: rotateY(90deg);
+            opacity: 0.5;
+        }
+        #side4 {
+            width: 150px;
+            height: 150px;
+            position: absolute;
+            left: 350px;
+            top: 200px;
+            background-color: blue;
+            transform-origin: left;
+            transform: rotateY(270deg);
+            opacity: 0.5
+        }
+        #side5 {
+            width: 150px;
+            height: 150px;
+            position: absolute;
+            left: 200px;
+            top: 50px;
+            background-color: springgreen;
+            transform-origin: bottom;
+            transform: rotateX(-90deg);
+            opacity:0.5;
+        }
+        #side6 {
+            background-color: purple;
+            width: 150px;
+            height: 150px;
+            position: absolute;
+            left: 200px;
+            top: 200px;
+            opacity: 0.5;
+            transform-origin: bottom;
+            transform: rotateX(270deg)
+        }
+        .container:hover {
+            perspective-origin:50px 270px;
+            transition: 2s;
+        }
+    </style>
+</head>
+<body>
+   
+   <div class="container">
+       <div id="side1">6</div>
+       <div id="side2">1</div>
+       <div id="side3">3</div>
+       <div id="side4">4</div>
+       <div id="side5">2</div>
+       <div id="side6">5</div>
+   </div>
+    
+</body>
+</html>

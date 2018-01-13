@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nav Bar</title>
+    <style>
+        *:hover {
+            cursor: wait;
+        }
+        
+        * {
+            background-color: black;
+            font-family: fantasy;
+            letter-spacing: 2px;
+            word-spacing: 5px;
+        }
+        
+        a {
+            color: aqua;
+            text-decoration: none;
+        }
+        
+        #nav {
+            background-color: black;
+        }
+        
+        #all {
+            background-color: black;
+            color: deepskyblue;
+            border: 0;
+        }
+        
+        @media all and (min-width:923px) {
+            #nav {
+                float: right;
+                position: absolute;
+                text-align: right;
+                top: 30px;
+                right: 20px;
+                background-color: gold;
+            }
+            *:hover {
+                cursor: no-drop;
+            }
+            * {
+                background-color: gold;
+            }
+            a, h1 {
+                color: red;
+            }
+        }
+        
+        @media all and (max-width:922px) {
+            #nav {
+                display: inline-block;
+            }
+        }
+        
+        hr {
+            height: 5px;
+            background-color: deepskyblue;
+            border: double 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="all">
+        <div id="title">
+            <h1>TEENS PROGRAMMING</h1>
+        </div>
+        <div id="nav">
+            <a href="">TECHNOLOGIES</a>
+            <a href="">COURSES</a>
+            <a href="">ABOUT</a>
+            <a href="">CONTACT</a>
+        </div>
+    </div>
+    <hr>
+
+</body>
+</html>

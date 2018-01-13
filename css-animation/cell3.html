@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		.container {
+			width: 100px;
+			height: 300px;
+			border: solid;
+			
+			overflow: hidden;
+			border-radius: 5px;
+			transform: rotateX(180deg);
+            
+            background-color: blue;
+		}
+		
+		.item {
+			width: 420px;
+			height: 9px;
+			background-color: red;
+			
+			animation: charge 0.01s linear alternate infinite;
+		}
+		
+		@keyframes charge {
+			from {
+				height: 2px;
+			}
+			to {
+				height: 100%;
+			}
+		}
+	
+	</style>
+</head>
+<body>
+	
+	<div class="container">
+		<div class="item"></div>
+	</div>
+	
+	
+</body>
+</html>
+
+

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        img {
+            width: 300px;
+            border-radius: 50%;
+            position: absolute;
+            transition: 1s;
+            
+            left: 0;
+            
+            left: 300px;
+        }
+        
+        @keyframes shake {
+            0% {
+               left: -10px; 
+                border-right: solid 9px;
+            }
+            100% {
+                left: 10px;
+                border-left: solid 9px;
+            }
+        }
+        img {
+            animation-name: shake;
+            animation-duration: 0.01s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+        img:hover {
+            animation-play-state: paused;
+        }
+    </style>
+</head>
+<body>
+   
+   <img src="https://www.bluecross.org.uk/sites/default/files/assets/images/118809lpr.jpg" alt="">
+    
+</body>
+</html>

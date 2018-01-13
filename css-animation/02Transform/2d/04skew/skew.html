@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+        }
+        
+        .first, .second {
+            display: inline-block;
+        }
+        div {
+            width: 200px;
+            height: 200px;
+            border: double 10px blue;
+            margin-left: 100px;
+            margin-top: 100px
+        }
+        .first {
+            transform: skew(25deg, 10deg);
+            
+        }
+        .second {
+/*            transform: skewX(-25deg);*/
+/*            transform: skewY(25deg);*/
+            transform: skew(-25deg, -10deg);
+        }
+    </style>
+</head>
+<body>
+   
+   <div class="first"></div>
+   <div class="second"></div>
+    
+</body>
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Landing Page</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-weight: 700;
+        }
+        
+        .navbar-brand:link,
+        .navbar-brand:visited {
+            color: #777;
+        }
+        
+        a:link {
+            text-decoration: none;
+            color: #337ab7;
+        }
+        
+        .navbartop {
+            display: block;
+            position: relative;
+            border-top: -250px
+        }
+        
+        .topleftnav {
+            font-size: 16px;
+            display: inline-block;
+            padding: 12px;
+            position: inherit;
+        }
+        
+        .toprightnav {
+            font-size: 16px;
+            float: right;
+            padding: 12px;
+            word-spacing: 10px;
+        }
+        
+        .intro {
+            background-image: url(Pictures/intro-bg.jpg);
+            text-align: center;
+            height: ;
+            margin-top: 150px;
+            margin-bottom: 150px;
+        }
+        
+        h1 {
+            font-size: 80px;
+            margin-bottom: 30px;
+            color: white;
+        }
+        
+        h2 {
+            font-size: 33px;
+        }
+        
+        h3 {
+            font-size: 30px;
+            margin: 20px
+        }
+        
+        h1,
+        h3 {
+            text-shadow: 3px 3px 3px grey;
+            color: white;
+        }
+        
+        #introhr {
+            width: 500px;
+            margin-bottom: 30px;
+            margin-top: 30px;
+        }
+        
+        #button {
+            width: 20%;
+            height: 50px;
+            border-radius: 10%;
+            background-color: white;
+        }
+        
+        #hr1 {
+            width: 245px;
+            margin-left: 30px;
+            height: 3px;
+            background-color: lightgray;
+            border: none;
+        }
+        
+        #hr2 {
+            width: 245px;
+            margin-left: 430px;
+            height: 3px;
+            background-color: lightgray;
+            border: none;
+        }
+        
+        #left {
+            margin-left: 30px;
+        }
+        
+        #leftp {
+            margin-left: 30px;
+            font-size: 1.3em;
+            font-weight: normal;
+        }
+        
+        #right {
+            margin-left: 430px;
+            display: block;
+        }
+        
+        #rightp {
+            margin-left: 430px;
+            font-size: 1.3em;
+            font-weight: normal;
+        }
+        
+        .left {
+            border-bottom: 1px #777;
+            background-color: #fff;
+        }
+        
+        img {
+            display: inline-block;
+        }
+        
+        #footh1 {
+            font-size: 50px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="navbartop" role="navigation">
+        <div class="topleftnav">
+            <a href="#" class="navbar-brand">Start Bootstrap</a>
+        </div>
+        <div class="toprightnav">
+            <a href="#about" class="navbar-brand">About</a>
+            <a href="#services" class="navbar-brand">Services</a>
+            <a href="#contact" class="navbar-brand">Contacts</a>
+        </div>
+    </div>
+    <div class="intro">
+        <h1>Landing Page</h1>
+        <h3>A Template by Start Bootstrap</h3>
+        <hr id="introhr">
+        <input id="button" type="button" onclick="location.href='https://twitter.com/SBootstrap'" value="TWITTER">
+        <input id="button" type="button" onclick="location.href='https://github.com/BlackrockDigital/startbootstrap'" value="GITHUB">
+        <input id="button" type="button" onclick="location.href=''" value="LINKEDIN">
+    </div>
+    <br>
+    <div class="left">
+        <hr id="hr1">
+        <h2 id="left">Death to the Stock Photo: <br> Special Thanks</h2>
+        <p id="leftp">A special thanks to <a id="bluelink" href="http://join.deathtothestockphoto.com/" style="color: #337ab7">Death to the Stock <br> Photo</a> for providing the photographs that <br> you see in this template. Visit their website <br> to become a member</p>
+    </div>
+    <br>
+    <br>
+    <div class="right">
+        <hr id="hr2">
+        <h2 id="right">3D Device Mockups <br> by PSDCovers</h2>
+        <p id="rightp">Turn your 2D designs into high quality, 3D <br> product shots in seconds using free <br> Photoshop actions by <a id="bluelink" href="http://www.psdcovers.com/" style="color: #337ab7">PSDCovers</a>! Visit <br> their website to download some of their <br> awesome, free photoshop actions!</p>
+    </div>
+    <br>
+    <br>
+    <div class="left">
+        <hr id="hr1">
+        <h2 id="left">Google Web Fonts and <br> Font Awesome Icons</h2>
+        <p id="leftp">This template features the 'Lato' font, part <br> of the <a href="https://fonts.google.com/" style="color: #337ab7">Google Web Font library</a>, as well as <br> <a href="http://fontawesome.io/" style="color: #337ab7">icons from Font Awesome</a></p>
+    </div>
+    <br>
+    <br>
+    <div class="footer">
+        <h1 id="footh1">Connect to Start Bootstrap:</h1>
+        <input id="button" type="button" onclick="location.href='https://twitter.com/SBootstrap'" value="Twitter">
+        <input id="button" type="button" onclick="location.href='https://github.com/BlackrockDigital/startbootstrap'" value="Github">
+        <input id="button" type="button" onclick="location.href=''" value="Linkedin">
+    </div>
+    <br>
+    <br>
+    <div class="footer2">
+        <a href="https://blackrockdigital.github.io/startbootstrap-landing-page/#" style="color: #337ab7">Home</a>&nbsp;-&nbsp;
+        <a href="https://blackrockdigital.github.io/startbootstrap-landing-page/#about" style="color: #337ab7">About</a>&nbsp;-&nbsp;
+        <a href="https://blackrockdigital.github.io/startbootstrap-landing-page/#services" style="color: #337ab7">Services</a>&nbsp;-&nbsp;
+        <a href="https://blackrockdigital.github.io/startbootstrap-landing-page/#contact" style="color: #337ab7">Contact</a>
+    </div>
+    <p>Copyright © Your Company 2014. All Rights Reserved</p>
+
+</body>
+
+</html>

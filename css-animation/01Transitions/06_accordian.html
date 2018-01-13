@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+        }
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        li a{
+            border: solid 1px;
+            margin-bottom: 2px;
+            display: block;
+            text-decoration: none;
+            font-size: 30px;
+        }
+        div {
+            height: 0;
+            overflow: hidden;
+            transition: all 0.2s ease;
+        }
+        div img {
+            width: 500px;
+        }
+        a:target+div {
+            height: 300px;
+        }
+    </style>
+    
+</head>
+<body>
+    <ul>
+        <li>
+            <a href="#item1" id="item1">Image 1</a>
+            <div><img src="http://www.leaguesplash.com/wp-content/uploads/2013/09/Anivia.jpg" alt=""></div>
+        </li>
+        <li>
+            <a href="#item2" id="item2">Image 2</a>
+            <div><img src="http://s2.thingpic.com/images/LA/gWLQpt96wT3N3c9gcXFzZ4Ds.jpeg" alt=""></div>
+        </li>
+    </ul>
+</body>
+</html>

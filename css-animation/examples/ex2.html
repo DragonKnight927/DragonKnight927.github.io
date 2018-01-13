@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    
+    <style>
+        
+        div {
+            height: 200px;
+            width: 200px;
+            background-image: url(https://images.pexels.com/photos/207385/pexels-photo-207385.jpeg?w=940&h=650&auto=compress&cs=tinysrgb);
+            border-radius: 50%;
+            margin:auto;
+            margin-top: 30%;
+            animation-name: scope;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+            animation-duration: 5s;
+            animation-timing-function: linear;
+        }
+        
+        body {
+            background-color: #000;
+        }
+        @keyframes scope {
+            0% {
+                background-position: 0px;
+            }
+            50% {
+                background-position: -740px;
+            }
+            100% {
+                background-position:0px;
+            }
+        }
+    </style>
+</head>
+<body>
+   
+   <div></div>
+    
+</body>
+</html>

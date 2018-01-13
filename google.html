@@ -12,9 +12,10 @@
             text-align: -webkit-center;
         }
         
-        links {
+        nav {
             text-align: right;
             font-size: 1.3em;
+            text-decoration: none;
         }
         
         img {
@@ -27,7 +28,7 @@
         }
         
         #main {
-            width: auto;
+            width: 400px;
             min-height: 50px;
             display: table-cell;
             vertical-align: middle;
@@ -43,9 +44,10 @@
             margin-top: 30px;
             position: inherit;
         }
+        
         #mp {
             position: absolute;
-            top: 364.8px;
+            top: 314.8px;
             right: 0px
         }
         
@@ -70,21 +72,26 @@
         
         span {
             position: absolute;
-            top: 285px;
-            left: 470px;
+            top: 245px;
+            left: 430px;
             font-size: 1.9em;
             color: royalblue;
         }
+        
         #footer {
             bottom: 0;
+            position: absolute;
+            width: 100%;
         }
+        
         footer {
             padding: 10px;
-            padding-bottom: 60px;
-            font-size: 1.2em; 
+            padding-bottom: 40px;
+            font-size: 1.2em;
             color: darkslategray;
             background-color: lightgray;
         }
+        
         #foot1 {
             position: absolute;
         }
@@ -94,20 +101,21 @@
 
 <body>
     <div style="text-align:right" id="links">
-        <links>
+        <nav>
             <a href="https://accounts.google.com/ServiceLogin/identifier?service=mail&passive=true&rm=false&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1&flowName=GlifWebSignIn&flowEntry=AddSession">Gmail</a>
 
             <a href="https://www.google.ca/imghp?hl=en&ei=6_svWbqGDaGpjwTb9azYCw&ved=0EKouCAIoAQ">Images</a>
 
-            <a id="9s" href="https://www.google.ca/intl/en/about/products/"><img src="https://www.englewoodschools.net/cms/lib/CO01900647/Centricity/Domain/1009/GoogleAppsIcon.png" alt=""></a>    
+            <a id="9s" href="https://www.google.ca/intl/en/about/products/"><img src="https://www.englewoodschools.net/cms/lib/CO01900647/Centricity/Domain/1009/GoogleAppsIcon.png" alt=""></a>
 
 
             <img src="https://image.flaticon.com/icons/png/128/181/181539.png" alt="">
 
+
             <a href="https://accounts.google.com/ServiceLogin/identifier?hl=en&passive=true&continue=https%3A%2F%2Fwww.google.ca%2Fwebhp%3Fei%3DJvsvWfDrPKL-jwT3z6uoCg%26yv%3D2%26rct%3Dj&flowName=GlifWebSignIn&flowEntry=AddSession">
                 <img id="si" src="http://canarylearning.com/wp-content/uploads/2015/11/GoogleIcon.png" alt="">
             </a>
-        </links>
+        </nav>
     </div>
 
     <div id="main">
@@ -126,18 +134,18 @@
 
 
     </div>
-    
+
     <div id="footer">
         <footer style="text-align:bottom">
-        <div id="foot1" style="text-align:left">
-            <a href="https://www.google.ca/intl/en/ads/?fg=1">Advertising</a>
-            <a href="https://www.google.ca/services/?fg=1#?modal_active=none">Business</a>
-            <a href="https://www.google.ca/intl/en/about/">About</a>
-        </div>
-        <div id="foot2" style="text-align:right">
-            <a href="https://www.google.ca/intl/en/policies/privacy/?fg=1">Privacy</a>
-        </div>
-    </footer>
+            <div id="foot1" style="text-align:left">
+                <a href="https://www.google.ca/intl/en/ads/?fg=1">Advertising</a>
+                <a href="https://www.google.ca/services/?fg=1#?modal_active=none">Business</a>
+                <a href="https://www.google.ca/intl/en/about/">About</a>
+            </div>
+            <div id="foot2" style="text-align:right">
+                <a href="https://www.google.ca/intl/en/policies/privacy/?fg=1">Privacy</a>
+            </div>
+        </footer>
     </div>
 
 
